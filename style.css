@@ -1,0 +1,161 @@
+body {
+    /*margin: 0;
+    font-family: sans-serif;
+    height: 2000px;*/
+    width: 100%;
+}
+
+.heroimg {
+    background: url(background.jpg) repeat fixed center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.slogan {
+    text-align: center;
+    padding-top: 30vh;
+    width: 100%;
+}
+
+
+.bt:hover {
+    background: #fff;
+    color: #333;
+}
+
+.header {
+    color: rgb(255, 230, 0);
+    background: rgba(24, 35, 138);
+    padding: 20px 36px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    align-items: center;
+    word-spacing: 40px
+}
+
+.logo {
+    word-spacing: normal;
+    font-weight: bolder;
+}
+
+.top {
+    background: rgb(255, 236, 178);
+    color: rgb(8, 57, 77);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    display: block;
+    text-align: center;
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+
+.top:hover {
+    background: rgb(201, 201, 201);
+}
+
+.content {
+    width: 1000px;
+    margin: 50px auto;
+    display: flex;
+}
+
+.photo, .text {
+    flex-basis: 50%;
+    max-width: 50%;
+}
+
+.photo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.footer-wrap {
+    color: rgb(255, 230, 0);
+    background: rgba(24, 35, 138);
+    padding: 20px 36px;
+    position: fixed;
+}
+
+.color {
+color: rgb(255, 230, 0);
+font-size: xx-large;
+}
+
+.triangle2 {
+    background: white;
+    border-color: rgba(24, 35, 138) rgba(213, 120, 142) transparent transparent;
+    border-style: solid solid solid solid;
+ 
+    /* 設定邊框大小可拼湊出任意形狀的三角形 */
+    border-width: 200px 1700px 0px 0px;
+ 
+    /* 設定 width、height 可更好理解原理 */
+    height: 0px;
+    width: 1700px;
+    position: relative;
+}
+.bannerText{
+    color: rgb(255, 230, 0);
+    position: absolute;
+    top: -200px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.bannerRight{
+    color: rgba(24, 35, 138);
+    position: absolute;
+    top: 30px;
+    left: 1500px;
+    right: 0;
+    bottom: 0;
+}
+
+@media screen and (width:100%){
+    body{font-size:20%}
+}
+@media screen and (max-width :700px){
+    /*.f1{font-size:12px}
+    body{font-size:12px}*/
+    .f1{font-size:0.36em}
+    body{font-size:0.36em}
+    .slogan{
+        width: 100%;
+    }
+    .triangle2{
+        width: 100%;
+        border-width: 200px 1000px 0px 0px;
+    }
+    .bannerText{
+        color: rgb(255, 230, 0);
+        position: absolute;
+        top: -180px;
+        left: 10px;
+        right: 0;
+        bottom: 0;
+    }
+    .bannerRight{
+        color: rgba(24, 35, 138);
+        position: absolute;
+        top: 10px;
+        left: 900px;
+        right: 0;
+        bottom: 0;
+    }
+    .re{
+        border-collapse: collapse;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
